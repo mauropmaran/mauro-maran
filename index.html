@@ -4,11 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mauro Maran | Portfólio</title>
+    <!-- CSS Externo -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Mauro Maran</h1>
-    <p>Site em construção.</p>
+    <header>
+        <nav class="container">
+            <div class="logo"><span class="gradient-text">MAURO MARAN</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#education">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <button id="theme-toggle" class="btn" style="padding: 0.5rem 1rem;">🌓</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <div class="container hero-content">
+                <h1>Olá, eu sou o <br><span class="gradient-text">Mauro Maran</span></h1>
+                <p class="hero-subtitle">Desenvolvedor Web em Formação & Entusiasta de Tecnologia</p>
+                <div class="hero-btns">
+                    <a href="#portfolio" class="btn">Ver Projetos</a>
+                    <a href="#contact" class="btn" style="background: transparent; border: 1px solid var(--primary-color); margin-left: 1rem;">Contato</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title">Sobre Mim</h2>
+                <div class="card" style="max-width: 800px; margin: 0 auto;">
+                    <p>Olá! Meu nome é Mauro Vinicius Possato Maran. Sou estudante de Análise e Desenvolvimento de Sistemas na UNINTER.</p>
+                    <p style="margin-top: 1rem;">Atualmente estou focado em aprender tecnologias web modernas, focando em criar interfaces intuitivas, rápidas e acessíveis. Este portfólio é um reflexo da minha jornada de aprendizado e evolução constante.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <div class="container">
+                <h2 class="section-title">Formação Acadêmica</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <div class="card">
+                        <h3 class="gradient-text">Graduação em ADS</h3>
+                        <p><strong>UNINTER</strong> | 2024 - Presente</p>
+                        <p style="margin-top: 1rem;">Foco em algoritmos, estrutura de dados e desenvolvimento de sistemas.</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="gradient-text">Desenvolvimento Web</h3>
+                        <p><strong>Autodidata & Cursos</strong> | 2025</p>
+                        <p style="margin-top: 1rem;">HTML5, CSS3, JavaScript e frameworks modernos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+            <div class="container">
+                <h2 class="section-title">Portfólio</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <div class="card">
+                        <div style="height: 150px; background: var(--accent-gradient); border-radius: 8px; margin-bottom: 1rem; opacity: 0.2;"></div>
+                        <h3>Projeto Web UNINTER</h3>
+                        <p>Este site portfólio desenvolvido para a atividade prática.</p>
+                    </div>
+                    <div class="card">
+                        <div style="height: 150px; background: var(--accent-gradient); border-radius: 8px; margin-bottom: 1rem; opacity: 0.2;"></div>
+                        <h3>Sistema de Gestão</h3>
+                        <p>Em breve: Um sistema completo para gestão de tarefas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title">Contato</h2>
+                <form id="contactForm" class="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" name="name" placeholder="Seu nome">
+                        <span id="nameError" class="error">Por favor, insira seu nome completo.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com">
+                        <span id="emailError" class="error">Por favor, insira um e-mail válido.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Como posso ajudar?"></textarea>
+                        <span id="messageError" class="error">A mensagem não pode estar vazia.</span>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container" style="padding: 3rem 0; text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.05); color: var(--text-muted);">
+            <p>&copy; 2026 Mauro Vinicius Possato Maran. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
     <script src="assets/js/script.js"></script>
 </body>
 </html>
