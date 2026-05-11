@@ -4,66 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mauro Maran | Portfólio</title>
-    <!-- CSS Externo -->
-    <link rel="stylesheet" href="assets/css/style.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <!-- Portfólio Mauro Maran -->
+
     <header>
-        <nav class="container">
-            <div class="logo"><span class="gradient-text">MAURO MARAN</span></div>
-            <ul class="nav-links">
-                <li><a href="#home">Início</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#education">Formação</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-            <button id="theme-toggle" class="btn" style="padding: 0.5rem 1rem;">🌓</button>
-        </nav>
+        <div class="container">
+            <nav>
+                <div class="logo">MAURO<span class="gradient-text">.MARAN</span></div>
+                <ul class="nav-links">
+                    <li><a href="#sobre">Sobre mim</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><button id="theme-toggle" class="btn" style="padding: 0.5rem 1rem; margin-left: 1rem;">Mudar Tema</button></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <!-- Home Section -->
+        <!-- Hero Section -->
         <section id="home">
-            <div class="container hero-content">
-                <h1>Olá, eu sou o <br><span class="gradient-text">Mauro Maran</span></h1>
-                <p class="hero-subtitle">Desenvolvedor Web em Formação & Entusiasta de Tecnologia</p>
-                <div class="hero-btns">
-                    <a href="#portfolio" class="btn">Ver Projetos</a>
-                    <a href="#contact" class="btn" style="background: transparent; border: 1px solid var(--primary-color); margin-left: 1rem;">Contato</a>
+            <div class="container" style="text-align: center;">
+                <div class="hero-content">
+                    <h1>Olá, eu sou <span class="gradient-text">Mauro Maran</span></h1>
+                    <p class="hero-subtitle">Engenheiro de Redes Jr na CSICLOUD | Acadêmico de Ciência da Computação</p>
+                    <div style="display: flex; gap: 1rem; justify-content: center;">
+                        <a href="#sobre" class="btn">Sobre Mim</a>
+                        <a href="#contato" class="btn" style="background: transparent; border: 1px solid var(--primary-color);">Contato</a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- About Section -->
-        <section id="about">
+        <section id="sobre">
             <div class="container">
                 <h2 class="section-title">Sobre Mim</h2>
-                <div class="card" style="max-width: 800px; margin: 0 auto;">
-                    <p>Olá! Meu nome é Mauro Vinicius Possato Maran. Sou estudante de Análise e Desenvolvimento de Sistemas na UNINTER.</p>
-                    <p style="margin-top: 1rem;">Atualmente estou focado em aprender tecnologias web modernas, focando em criar interfaces intuitivas, rápidas e acessíveis. Este portfólio é um reflexo da minha jornada de aprendizado e evolução constante.</p>
+                <div class="card">
+                    <p>Sou acadêmico de Ciência da Computação na UNINTER, atualmente no 2º ano. Trabalho como Engenheiro de Redes Jr na CSICLOUD desde Janeiro de 2026. Tenho forte interesse em infraestrutura de redes, virtualização e automação de sistemas.</p>
+                    <br>
+                    <p>Minha trajetória é focada na resolução de problemas complexos de infraestrutura e na implementação de soluções escaláveis em ambientes de nuvem.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Education Section -->
-        <section id="education">
+        <!-- Education and Experience Section -->
+        <section id="formacao">
             <div class="container">
-                <h2 class="section-title">Formação Acadêmica</h2>
+                <h2 class="section-title">Formação e Experiência</h2>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
                     <div class="card">
-                        <h3 class="gradient-text">Graduação em ADS</h3>
-                        <p><strong>UNINTER</strong> | 2024 - Presente</p>
-                        <p style="margin-top: 1rem;">Foco em algoritmos, estrutura de dados e desenvolvimento de sistemas.</p>
+                        <h3>Acadêmico</h3>
+                        <p><strong>Bacharelado em Ciência da Computação</strong></p>
+                        <p>UNINTER | 2024 - 2028 (2º ano)</p>
+                        <br>
+                        <p><strong>Idiomas</strong></p>
+                        <p>Inglês Avançado (Leitura e Escrita técnica)</p>
                     </div>
                     <div class="card">
-                        <h3 class="gradient-text">Desenvolvimento Web</h3>
-                        <p><strong>Autodidata & Cursos</strong> | 2025</p>
-                        <p style="margin-top: 1rem;">HTML5, CSS3, JavaScript e frameworks modernos.</p>
+                        <h3>Experiência Profissional</h3>
+                        <p><strong>Engenheiro de Redes Jr - CSICLOUD</strong></p>
+                        <p>Jan/2026 - Atualmente</p>
+                        <br>
+                        <p><strong>Suporte Técnico - TTNet Telecomunicações</strong></p>
+                        <p>Dez/2024 - Out/2025</p>
                     </div>
                 </div>
             </div>
@@ -72,24 +84,32 @@
         <!-- Portfolio Section -->
         <section id="portfolio">
             <div class="container">
-                <h2 class="section-title">Portfólio</h2>
+                <h2 class="section-title">Meu Portfólio</h2>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
                     <div class="card">
-                        <div style="height: 150px; background: var(--accent-gradient); border-radius: 8px; margin-bottom: 1rem; opacity: 0.2;"></div>
-                        <h3>Projeto Web UNINTER</h3>
-                        <p>Este site portfólio desenvolvido para a atividade prática.</p>
+                        <h3>Som Maran</h3>
+                        <p>Galeria interativa de áudios com painel administrativo, desenvolvida em React e Flask.</p>
+                        <a href="https://som.maran.app.br" target="_blank" style="color: var(--primary-color);">Acessar projeto →</a>
                     </div>
                     <div class="card">
-                        <div style="height: 150px; background: var(--accent-gradient); border-radius: 8px; margin-bottom: 1rem; opacity: 0.2;"></div>
-                        <h3>Sistema de Gestão</h3>
-                        <p>Em breve: Um sistema completo para gestão de tarefas.</p>
+                        <h3>OCR AI Web</h3>
+                        <p>Sistema baseado em IA para reconhecimento de texto em documentos PDF.</p>
+                        <a href="https://ocr.maran.app.br" target="_blank" style="color: var(--primary-color);">Acessar projeto →</a>
+                    </div>
+                    <div class="card">
+                        <h3>Automação LiteBeam</h3>
+                        <p>Scripts SSH para gerenciamento e provisionamento de antenas Ubiquiti.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Laboratório Proxmox</h3>
+                        <p>Administração de servidores VPS e virtualização para serviços web e jogos.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact">
+        <section id="contato">
             <div class="container">
                 <h2 class="section-title">Contato</h2>
                 <form id="contactForm" class="contact-form" novalidate>
@@ -116,7 +136,7 @@
 
     <footer>
         <div class="container" style="padding: 3rem 0; text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.05); color: var(--text-muted);">
-            <p>&copy; 2026 Mauro Vinicius Possato Maran. Todos os direitos reservados.</p>
+            <p>&copy; 2026 Mauro Vinícius Possato Maran. Todos os direitos reservados.</p>
         </div>
     </footer>
 
